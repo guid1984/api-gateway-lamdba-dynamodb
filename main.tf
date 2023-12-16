@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "api-gateway-lambda-dynamodb" # change to name of your bucket
-    region = "us-west-1"                   # change to your region
+    bucket = "api-gateway-lambda-dynamo-db" # change to name of your bucket
+    region = "eu-west-2"                   # change to your region
     key    = "terraform.tfstate"
   }
 }
