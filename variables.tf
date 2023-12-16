@@ -1,6 +1,7 @@
 variable "jwtSecret" {
   description = "JWT Secret"
   sensitive   = true
+  default = "jwt-secret-1234"
 }
 
 variable "aws_region" {
@@ -10,6 +11,7 @@ variable "aws_region" {
 
 variable "aws_s3_bucket" {
   description = "S3 Bucket for Zip"
+  default = "api-gateway-lambda-dynamo-db"
 }
 
 locals {
